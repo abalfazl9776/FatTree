@@ -4,14 +4,21 @@ namespace FatTree;
 
 public class EdgeSwitch : Node
 {
-    public byte Pod { get; set; }
-
-    public byte Number { get; set; }
+    public byte Pod { get; }
+    public byte Number { get; }
+    private readonly List<Link> _links;
+    public IReadOnlyCollection<Link> Links => _links.AsReadOnly();
     
     public EdgeSwitch(int id, IP ip, byte pod, byte number) : base(id, ip)
     {
         Pod = pod;
         Number = number;
+        _links = new List<Link>();
+    }
+
+    public void AddLink(Link link)
+    {
+        _links.Add(link);
     }
 
     public override bool IsConnectedTo(IP ip)
