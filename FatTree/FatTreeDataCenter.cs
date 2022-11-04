@@ -30,7 +30,7 @@ public class FatTreeDataCenter
 
     public IEnumerable<LinkDto> GetLinks()
     {
-        return _links.Select(x => new LinkDto(x._1.Id, x._2.Id));
+        return _links.Select(x => new LinkDto(x._1.Id, x._2.Id)).OrderBy(x => x.Node_1).ThenBy(x => x.Node_2);
     }
 
     private void Build()
