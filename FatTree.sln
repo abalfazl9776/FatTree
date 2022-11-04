@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FatTree", "FatTree\FatTree.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{62E1AF6D-500F-4E58-A1F5-37386495402A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FatTree.UnitTests", "FatTree.UnitTests\FatTree.UnitTests.csproj", "{37B5615E-BB00-48ED-BC45-4A50596B681D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{62E1AF6D-500F-4E58-A1F5-37386495402A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{62E1AF6D-500F-4E58-A1F5-37386495402A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{62E1AF6D-500F-4E58-A1F5-37386495402A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37B5615E-BB00-48ED-BC45-4A50596B681D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37B5615E-BB00-48ED-BC45-4A50596B681D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37B5615E-BB00-48ED-BC45-4A50596B681D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37B5615E-BB00-48ED-BC45-4A50596B681D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
