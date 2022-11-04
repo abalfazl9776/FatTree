@@ -30,3 +30,4 @@ else
     File.WriteAllLines(fileName, lines);
     Process.Start("notepad.exe", fileName);
 }
+Console.Read();
