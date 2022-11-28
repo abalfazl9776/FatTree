@@ -126,4 +126,24 @@ public class FatTreeDataCenter
         _links.AddRange(edgeServerLinks);
         _links.AddRange(coreAggregateLinks);
     }
+
+    public IEnumerable<NodeDto> GetHosts()
+    {
+        return _servers.Select(x => new NodeDto() { Id = x.Id, IP = x.IP });
+    }
+    
+    public  IEnumerable<NodeDto> GetEdgeSwitches()
+    {
+        return _edgeSwitches.Select(x => new NodeDto() { Id = x.Id, IP = x.IP });
+    }
+    
+    public  IEnumerable<NodeDto> GetAggregateSwitches()
+    {
+        return _aggregateSwitches.Select(x => new NodeDto() { Id = x.Id, IP = x.IP });
+    }
+    
+    public  IEnumerable<NodeDto> GetCoreSwitches()
+    {
+        return _coreSwitches.Select(x => new NodeDto() { Id = x.Id, IP = x.IP });
+    }
 }
